@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+//use two pointers to move zero
 func moveZeroes(nums []int) {
 	j := 0
 	for i, v := range nums {
