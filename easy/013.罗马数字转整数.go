@@ -5,11 +5,14 @@ import (
 	"strings"
 )
 
+//用于存储判断数字的结构体
+//描述当前数字和下一个数字的关系，以判断是否要改变计算方式
 type Roman struct {
 	val  int
 	next string
 }
 
+//
 func constructor() map[string]Roman {
 	rMap := make(map[string]Roman)
 	rMap["I"] = Roman{
